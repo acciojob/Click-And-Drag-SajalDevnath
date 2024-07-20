@@ -58,10 +58,10 @@
   });
 
   slider.addEventListener('mousemove', (e) => {
-    if (!isDown) return; // stop the fn from running
+    if (!isDown) return; // stop the function from running
     e.preventDefault();
     const x = e.pageX - slider.offsetLeft;
-    const walk = (x - startX) * 3; //scroll-fast
+    const walk = (x - startX) * 3; // scroll-fast
     slider.scrollLeft = scrollLeft - walk;
   });
 </script>
